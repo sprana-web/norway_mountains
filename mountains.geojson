@@ -1,0 +1,285 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Galdhøpiggen",
+                "height": 2469
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.31222,
+                    61.63611
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Glittertind",
+                "height": 2452
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.55722,
+                    61.65111
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Store Skagastølstind",
+                "height": 2405
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.87139,
+                    61.46139
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Store Styggedalstinden, E",
+                "height": 2387
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.90139,
+                    61.46444
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Skarstind",
+                "height": 2377
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.26611,
+                    61.63333
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Vesle Galdhøpiggen",
+                "height": 2369
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.30639,
+                    61.64083
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Surtningssue",
+                "height": 2368
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.57222,
+                    61.53417
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Store Memurutinden, E",
+                "height": 2366
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.48806,
+                    61.56750
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jervvasstind",
+                "height": 2351
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.90972,
+                    61.46444
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sentraltind",
+                "height": 2348
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.88250,
+                    61.46361
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Store Hellstugutinden",
+                "height": 2346
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.42806,
+                    61.54417
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Storjuvtinden",
+                "height": 2344
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.29361,
+                    61.63028
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Store Knutsholstinden",
+                "height": 2340
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.56250,
+                    61.42444
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Vetle Skagastølstind",
+                "height": 2340
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.87417,
+                    61.46444
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Midtre Hellstugutinden",
+                "height": 2339
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.42417,
+                    61.55139
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Leirhøi",
+                "height": 2330
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.46694,
+                    61.59111
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tjørnholstind",
+                "height": 2329
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.64639,
+                    61.44500
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bukkehøe",
+                "height": 2314
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.26583,
+                    61.60417
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Store Tverråtinden",
+                "height": 2309
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.30139,
+                    61.61500
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tverråtinden, M",
+                "height": 2302
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.31556,
+                    61.61417
+                ]
+            }
+        }
+    ]
+}
