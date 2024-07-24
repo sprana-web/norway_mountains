@@ -2,7 +2,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2FqaXRoLTkzMCIsImEiOiJjbHM0OTdzcTMwMWFzMmpue
 
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/outdoors-v11',
+    style: 'mapbox://styles/mapbox/streets-v11',
     center: [8.3125, 61.6375], // Center the map on Norway
     zoom: 5,
     pitch: 60, // Increase pitch for a 3D effect
@@ -75,7 +75,37 @@ map.on('load', function () {
                 };
                 list.appendChild(listItem);
             });
-            console.log("Mountain list populated:", list.innerHTML); // Debug statement
         })
         .catch(error => console.error('Error loading GeoJSON:', error));
+});
+
+// Layer switcher logic
+document.getElementById('menu').addEventListener('change', function (e) {
+    const style = e.target.value === 'satellite' ? 'mapbox://styles/mapbox/satellite-streets-v11' : 'mapbox://styles/mapbox/streets-v11';
+    map.setStyle(style);
+
+    map.once('styledata', () => {
+        map.addSource('mapbox-dem', {
+            'type': 'raster-dem',
+            'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+            'tileSize': 512,
+            'maxzoom': 14
+        });
+        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+        map.addSource('mountains', {
+            'type': 'geojson',
+            'data': 'mountains.geojson'
+        });
+
+        map.addLayer({
+            'id': 'mountains-layer',
+            'type': 'circle',
+            'source': 'mountains',
+            'paint': {
+                'circle-radius': 6,
+                'circle-color': '#B42222'
+            }
+        });
+    });
 });
