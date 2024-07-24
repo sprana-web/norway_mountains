@@ -3,11 +3,18 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2FqaXRoLTkzMCIsImEiOiJjbHM0OTdzcTMwMWFzMmpue
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
-    center: [8.3125, 61.6375], // Center the map on Norway
-    zoom: 5,
     pitch: 60, // Increase pitch for a 3D effect
     bearing: -60 // Change the bearing for better 3D view
 });
+
+// Define the bounds of the primary mountain areas in Norway
+const mountainBounds = [
+    [6.0, 60.0], // Southwest coordinates
+    [10.5, 62.5] // Northeast coordinates
+];
+
+// Fit the map to the defined bounds of the primary mountain areas
+map.fitBounds(mountainBounds);
 
 map.on('load', function () {
     // Enable 3D terrain
@@ -60,9 +67,9 @@ map.on('load', function () {
         .then(data => {
             const list = document.getElementById('mountain-list');
             data.features.forEach((feature, index) => {
-                const { name, height } = feature.properties;
+                const { name } = feature.properties; // Remove height here
                 const listItem = document.createElement('li');
-                listItem.textContent = `${name} (${height}m)`;
+                listItem.textContent = `${name}`; // Display only the name
                 listItem.onclick = () => {
                     map.flyTo({
                         center: feature.geometry.coordinates,
@@ -71,6 +78,7 @@ map.on('load', function () {
                         bearing: -60, // Adjust the bearing
                         essential: true
                     });
+                    const { height } = feature.properties;
                     document.getElementById('mountain-info').innerHTML = `<strong>${name}</strong><br>Height: ${height} meters`;
                 };
                 list.appendChild(listItem);

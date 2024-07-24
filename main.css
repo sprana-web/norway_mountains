@@ -22,12 +22,18 @@ html {
     border-radius: 8px;
 }
 
+#sidebar-right h3 {
+    text-align: center;
+
+}
+
 #map {
     flex-grow: 1;
     height: calc(100vh - 40px);
     margin: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 ul {
@@ -54,15 +60,15 @@ li:hover {
 
 #menu {
     position: absolute;
-    top: 50%;
-    right: 10px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     background: #ffffff;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     gap: 10px;
-    transform: translateY(-50%);
 }
 
 #menu input {
